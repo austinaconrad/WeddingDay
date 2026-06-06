@@ -12,13 +12,13 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --cream:   #FAF8F5;
+      --cream:   #F4F7FA;
       --white:   #FFFFFF;
-      --gold:    #9E8260;
-      --gold-lt: #C9AC88;
-      --ink:     #1E1E1E;
-      --ink-lt:  #5A5A5A;
-      --border:  #E8E2DA;
+      --gold:    #5A7FA0;
+      --gold-lt: #8AAEC8;
+      --ink:     #1C2B4A;
+      --ink-lt:  #4A6480;
+      --border:  #C8DAE8;
       --serif:   'Cormorant Garamond', Georgia, serif;
       --sans:    'Jost', system-ui, sans-serif;
     }
@@ -43,7 +43,7 @@
       justify-content: center;
       gap: 2.5rem;
       padding: 1.25rem 2rem;
-      background: rgba(250, 248, 245, 0.92);
+      background: rgba(244, 247, 250, 0.94);
       backdrop-filter: blur(8px);
       border-bottom: 1px solid var(--border);
     }
@@ -302,7 +302,7 @@
 
     .seating-highlight {
       display: none;
-      background: #FDF6EC;
+      background: #EAF1F7;
       border: 1px solid var(--gold-lt);
       border-radius: 2px;
       padding: 1rem 1.5rem;
@@ -332,7 +332,7 @@
 
     .table-card.highlighted {
       border-color: var(--gold);
-      box-shadow: 0 0 0 3px rgba(158, 130, 96, 0.1);
+      box-shadow: 0 0 0 3px rgba(90, 127, 160, 0.12);
     }
 
     .table-name {
@@ -570,62 +570,150 @@
      */
     const TABLES = [
       {
-        name: "Table 1 — Sweetheart",
-        guests: ["Bride & Groom"]
-      },
-      {
-        name: "Table 2 — Family",
+        name: "Table 1",
         guests: [
-          "Jane Smith",
-          "John Smith",
-          "Emily Smith",
-          "Robert Smith",
-          "Susan Smith",
-          "Michael Smith"
+          "Barb Anderson", "Tim Anderson", "Aaron Conrad", "Bill Conrad",
+          "Brynn Conrad", "Emma Conrad", "Heather Conrad", "Tina Conrad",
+          "Cameron McClendon"
         ]
       },
       {
-        name: "Table 3 — Family",
+        name: "Table 2",
         guests: [
-          "Alice Johnson",
-          "David Johnson",
-          "Laura Johnson",
-          "Tom Johnson",
-          "Nancy Johnson",
-          "Chris Johnson"
+          "Ava Jackson", "Cassandra Jackson", "Matthew Jackson",
+          "Dean Shira", "Linda Shira",
+          "Bob Vaughn", "Joe Vaughn", "Sue Vaughn", "Tami Vaughn"
         ]
       },
       {
-        name: "Table 4 — College Friends",
+        name: "Table 3",
         guests: [
-          "Olivia Brown",
-          "Liam Brown",
-          "Emma Davis",
-          "Noah Davis",
-          "Sophia Wilson",
-          "Mason Wilson"
+          "Ethan Clark", "Grant Cowan", "Matt Cupps", "Nate Porter",
+          "Erika Scott", "Mackenzie Thompson", "Maya Wensits", "Drew Yoder"
         ]
       },
       {
-        name: "Table 5 — Work Friends",
+        name: "Table 4",
         guests: [
-          "Ava Martinez",
-          "James Martinez",
-          "Isabella Garcia",
-          "Ethan Garcia",
-          "Mia Anderson",
-          "Alexander Anderson"
+          "Haley Briggs", "Jason Harris", "Brooke Hodgson", "Brady Ingland",
+          "David May", "Chase Miles", "Jack Vellky"
         ]
       },
       {
-        name: "Table 6 — Childhood Friends",
+        name: "Table 5",
         guests: [
-          "Charlotte Thomas",
-          "Benjamin Thomas",
-          "Amelia Jackson",
-          "Henry Jackson",
-          "Harper White",
-          "Lucas White"
+          "Abby Alatsis", "Garrett Byers", "Marissa Ferko", "Nick Ferko",
+          "Adam Goodpaster", "Katie Haugh", "Dominic Keidel", "Derek Morgan"
+        ]
+      },
+      {
+        name: "Table 6",
+        guests: [
+          "Isaac Browning", "Chase Ferguson", "Chloe Ferguson", "Tyler Gregory",
+          "Keaton Mossman", "Kelly Sapp", "Sydney Sherrib", "Kyle Sturgin"
+        ]
+      },
+      {
+        name: "Table 7",
+        guests: [
+          "Caleb McNichols", "Callan McNichols", "Sydney McNichols",
+          "Grace Pozderac", "Katie Pozderac", "Mikey Pozderac", "Taylor Pozderac",
+          "Jake Smith", "Logan Springer"
+        ]
+      },
+      {
+        name: "Table 8",
+        guests: [
+          "Dalton Brown", "Kinsey Crabtree", "Jacob Drees", "Kevin D'Souza",
+          "Kaylee Jones", "Cole Kazmerzak", "Joey Maynard", "Caleb Stimmel"
+        ]
+      },
+      {
+        name: "Table 9",
+        guests: [
+          "Emily Allison", "Jessica Bock", "Kylee Caddy", "Luke Caddy",
+          "Brock Dettmer", "Jordan Hoag", "Emma Klemanski",
+          "Kathryn Moody", "Nathan Sharpes"
+        ]
+      },
+      {
+        name: "Table 10",
+        guests: [
+          "Brad Anderson", "Jen Anderson", "Leslie Anderson", "Matt Anderson",
+          "Bethie Hansen", "CI Hansen", "CI Neading", "Lindsey Neading"
+        ]
+      },
+      {
+        name: "Table 11",
+        guests: [
+          "Gavin Anderson", "Grady Anderson", "Lyla Anderson", "Simon Anderson",
+          "Brynn Hansen", "Jonah Hansen", "Jackson Nussbaum", "Katelyn Nussbaum"
+        ]
+      },
+      {
+        name: "Table 12",
+        guests: [
+          "Ewan Anderson", "Gabby Anderson",
+          "Carter Neading", "Chloe Neading", "Leah Neading", "Libby Neading",
+          "Kamryn Nussbaum"
+        ]
+      },
+      {
+        name: "Table 13",
+        guests: [
+          "Gwen Arbaugh", "Bob Boss", "Lorraine Boss",
+          "Bill Levering", "Joan Levering", "Ken Levering", "Sue Levering"
+        ]
+      },
+      {
+        name: "Table 14",
+        guests: [
+          "Kelsey Jenson", "Lindsey Jenson", "Tim Jenson", "Will Jenson",
+          "Anna Patterson", "Derrick Stull", "Samantha Stull"
+        ]
+      },
+      {
+        name: "Table 15",
+        guests: [
+          "Mallorie Coffield", "Shaun Coffield", "Tracy Holzmiller",
+          "Jarret Mathie", "Tricia Mathie", "Ashley McCorkle", "Mike McCorkle",
+          "Zack Seevers", "Brandi Severns"
+        ]
+      },
+      {
+        name: "Table 16",
+        guests: [
+          "Lori Briegle", "Mark Briegle", "Staci Matthews", "Tom Matthews",
+          "Lori Shipley", "Wid Shipley", "Kenny Shira"
+        ]
+      },
+      {
+        name: "Table 17",
+        guests: [
+          "Camden Boozer", "Cohen Boozer", "Biffany Casto", "Jessica Fawcett",
+          "Aryanna Miray", "Gov Vaughn", "Jeff Vaughn", "Tina Vaughn"
+        ]
+      },
+      {
+        name: "Table 18",
+        guests: [
+          "Jusden Matthews", "Sam Matthews",
+          "Austin Palms", "Davina Palms", "Drezden Palms", "Ellie Palms", "Lydia Palms"
+        ]
+      },
+      {
+        name: "Table 19",
+        guests: [
+          "Audri Shipley", "Bennett Shipley", "Challyn Shipley", "Eloise Shipley",
+          "Emily Shipley", "Emmett Shipley", "Fletcher Shipley", "Harper Shipley",
+          "Jamison Shipley", "Mason Shipley"
+        ]
+      },
+      {
+        name: "Table 20",
+        guests: [
+          "Connor Hurt", "Cynthia Hurt", "Dominic Hurt",
+          "Jaselyn Hurt", "Phil Hurt", "Savannah Hurt"
         ]
       }
     ];
