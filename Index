@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Wedding</title>
+  <title>Hannah & Austin's Wedding</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
@@ -455,13 +455,10 @@
     <div class="hero-text">
       <p class="hero-eyebrow">We're getting married</p>
       <h1 class="hero-names">
-        <!-- ✏️ Replace with your names -->
-        First &amp; First
-        <span>&amp;</span>
+        Hannah &amp; Austin
       </h1>
-      <!-- ✏️ Replace with your date and location -->
-      <p class="hero-date">Saturday, the First of January, Two Thousand Twenty-Six</p>
-      <p class="hero-location">Venue Name · City, State</p>
+      <p class="hero-date">Saturday, the Twenty-Sixth of September, Two Thousand Twenty-Six</p>
+      <p class="hero-location">Licking County Springs Country Club · Newark, OH</p>
     </div>
   </section>
 
@@ -472,7 +469,6 @@
     <div class="divider"></div>
 
     <div class="timeline">
-      <!-- ✏️ Update times and events to match your day -->
       <div class="timeline-item">
         <span class="timeline-time">4:00 pm</span>
         <div class="timeline-content">
@@ -484,7 +480,7 @@
         <span class="timeline-time">4:30 pm</span>
         <div class="timeline-content">
           <p class="timeline-event">Ceremony</p>
-          <p class="timeline-detail">Ceremony Garden</p>
+          <p class="timeline-detail">Licking County Springs Country Club</p>
         </div>
       </div>
       <div class="timeline-item">
@@ -558,8 +554,7 @@
 
   <!-- ── Footer ────────────────────────────────────────────────────────── -->
   <footer>
-    <!-- ✏️ Replace with your names and date -->
-    First &amp; First · January 1, 2026
+    Hannah Vaughn &amp; Austin Conrad · September 26, 2026
   </footer>
 
   <!-- ── Seating Chart Data & Logic ────────────────────────────────────── -->
